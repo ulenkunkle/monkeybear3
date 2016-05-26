@@ -179,6 +179,7 @@ pygame.mouse.set_visible(0)
 # This is a font we use to draw text on the screen (size 36)
 font = pygame.font.Font(None, 24)
 font2 = pygame.font.Font(None, 30) 
+font3 = pygame.font.Font(None,72)
 # Create a surface we can draw on
 background = pygame.Surface(screen.get_size())
  
@@ -264,7 +265,7 @@ while not exit_program:
             pygame.mixer.music.load('C://Users/tom/Documents/python/m500.mp3')
             pygame.mixer.music.play()
             j1.play()
-            randsong = random.randrange(1,3)
+            randsong = random.randrange(1,10)
             print randsong
             ## pygame.mixer.Sound('firearm.wav')
             if randsong == 1:
@@ -279,30 +280,30 @@ while not exit_program:
                
                 pygame.mixer.music.load('C://Users/tom/Documents/python/kinks1.mp3')
                 pygame.mixer.music.play() 
-            # if randsong == 4:
+            if randsong == 4:
                 
-                # pygame.mixer.music.load('yess5.flac')
-                # pygame.mixer.music.play()
-            # if randsong == 5:
+                pygame.mixer.music.load('C://Users/tom/Documents/python/amy.mp3')
+                pygame.mixer.music.play()
+            if randsong == 5:
                 
-                # pygame.mixer.music.load('yess6.flac')
-                # pygame.mixer.music.play() 
-            # if randsong == 6:
+                pygame.mixer.music.load('C://Users/tom/Documents/python/bell1.mp3')
+                pygame.mixer.music.play() 
+            if randsong == 6:
                 
-                # pygame.mixer.music.load('yess7.flac')
-                # pygame.mixer.music.play()          
-            # if randsong == 7:
+                pygame.mixer.music.load('C://Users/tom/Documents/python/cat1.mp3')
+                pygame.mixer.music.play()          
+            if randsong == 7:
                
-                # pygame.mixer.music.load('firearm.wav')
-                # pygame.mixer.music.play()   
-            # if randsong == 8:
+                pygame.mixer.music.load('C://Users/tom/Documents/python/66.mp3')
+                pygame.mixer.music.play()   
+            if randsong == 8:
                 
-                # pygame.mixer.music.load('yess8.flac')
-                # pygame.mixer.music.play()
-            # if randsong == 9:
+                pygame.mixer.music.load('C://Users/tom/Documents/python/richard.mp3')
+                pygame.mixer.music.play()
+            if randsong == 9:
                
-                # pygame.mixer.music.load('yess9.flac')
-                # pygame.mixer.music.play()
+                pygame.mixer.music.load('C://Users/tom/Documents/python/lulu.mp3')
+                pygame.mixer.music.play()
         # Set the ball's y position in case we hit the ball on the edge of the paddle
         t_minus = player1.rect.y
         ball.y = t_minus-2
@@ -326,8 +327,12 @@ while not exit_program:
     # Print the score
     if foul1 > 9.5:
             #pygame.mixer.music.stop()
-            scorefoul = "FOUL !!!!!!!! humans lose 5 points... "
-            text2 = font2.render(scorefoul, 1, RED)
+            scorefoul = "FOUL !!!!! "
+            text2 = font3.render(scorefoul, 1, RED)
+            textpos = (440, 20)
+            screen.blit(text2, textpos)
+            scorefoul2 = "Silly Humans lose 5 points... "
+            text2 = font2.render(scorefoul2, 1, RED)
             textpos = (440, 0)
             screen.blit(text2, textpos)
     scoreprint = "Player 1(humans): "+str(score1)
