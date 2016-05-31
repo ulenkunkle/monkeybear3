@@ -163,10 +163,10 @@ pygame.mixer.init()
 #pygame.mixer.pre_init(44100, -16, 2, 2048)
 
 #pygame.mixer.music.load('yess11.flac')
-pygame.mixer.music.load('C://Users/tom/Documents/python/yes1.mp3')
+pygame.mixer.music.load('yes1.mp3')
 pygame.mixer.music.play()
 # Create an 800x600 sized screen
-j1 = pygame.mixer.Sound('C://Users/tom/Documents/python/m500.mp3')
+j1 = pygame.mixer.Sound('m500.mp3')
 j1.play()
 screen = pygame.display.set_mode([800, 600])
  
@@ -262,7 +262,7 @@ while not exit_program:
             # textpos = (450, 0)
             # screen.blit(text2, textpos)
             score1 = score1-5
-            pygame.mixer.music.load('C://Users/tom/Documents/python/m500.mp3')
+            pygame.mixer.music.load('m500.mp3')
             pygame.mixer.music.play()
             j1.play()
             randsong = random.randrange(1,10)
@@ -270,39 +270,39 @@ while not exit_program:
             ## pygame.mixer.Sound('firearm.wav')
             if randsong == 1:
                 
-                pygame.mixer.music.load('C://Users/tom/Documents/python/kinks2.mp3')
+                pygame.mixer.music.load('kinks2.mp3')
                 pygame.mixer.music.play()
             if randsong == 2:
             
-                pygame.mixer.music.load('C://Users/tom/Documents/python/luel.mp3')
+                pygame.mixer.music.load('luel.mp3')
                 pygame.mixer.music.play() 
             if randsong == 3:
                
-                pygame.mixer.music.load('C://Users/tom/Documents/python/kinks1.mp3')
+                pygame.mixer.music.load('kinks1.mp3')
                 pygame.mixer.music.play() 
             if randsong == 4:
                 
-                pygame.mixer.music.load('C://Users/tom/Documents/python/amy.mp3')
+                pygame.mixer.music.load('amy.mp3')
                 pygame.mixer.music.play()
             if randsong == 5:
                 
-                pygame.mixer.music.load('C://Users/tom/Documents/python/bell1.mp3')
+                pygame.mixer.music.load('bell1.mp3')
                 pygame.mixer.music.play() 
             if randsong == 6:
                 
-                pygame.mixer.music.load('C://Users/tom/Documents/python/cat1.mp3')
+                pygame.mixer.music.load('cat1.mp3')
                 pygame.mixer.music.play()          
             if randsong == 7:
                
-                pygame.mixer.music.load('C://Users/tom/Documents/python/66.mp3')
+                pygame.mixer.music.load('66.mp3')
                 pygame.mixer.music.play()   
             if randsong == 8:
                 
-                pygame.mixer.music.load('C://Users/tom/Documents/python/richard.mp3')
+                pygame.mixer.music.load('richard.mp3')
                 pygame.mixer.music.play()
             if randsong == 9:
                
-                pygame.mixer.music.load('C://Users/tom/Documents/python/lulu.mp3')
+                pygame.mixer.music.load('lulu.mp3')
                 pygame.mixer.music.play()
         # Set the ball's y position in case we hit the ball on the edge of the paddle
         t_minus = player1.rect.y
